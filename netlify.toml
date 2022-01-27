@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/rsvp/*"
+  from = "/*"
   to = "https://go.advisorlaunch.com/rsvp/:splat"
   status = 200
   force = true
