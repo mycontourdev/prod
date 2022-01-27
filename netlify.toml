@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/*"
+  to = "https://https://go.advisorlaunch.com/rsvp/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    X-From = "Netlify"
+    X-Api-Key = "some-api-key-string"
