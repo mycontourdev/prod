@@ -1,8 +1,5 @@
 [[redirects]]
-  from = "/"
+  from = "https://www-coursersvp-me.netlify.app/*"
   to = "https://go.advisorlaunch.com/rsvp/:splat"
-  status = 200
+  status = 301
   force = true
-  [redirects.headers]
-    X-From = "Netlify"
-    X-Api-Key = "some-api-key-string"
