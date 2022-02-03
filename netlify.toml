@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = "https://go.advisorlaunch.com/version-test/home"
+  to = "https://go.advisorlaunch.com/version-test/:splat"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
