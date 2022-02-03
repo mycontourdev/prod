@@ -3,4 +3,4 @@
   to = "https://go.advisorlaunch.com/version-test/home"
   status = 200
   force = true
-  query = {path = ":path"} # apply this rule for /?path=example
+  headers = {X-From = "Netlify"}
