@@ -4,9 +4,3 @@
   status = 200
   force = true
   query = {path = ":path"} # apply this rule for /?path=example
-  conditions = {Role = ["admin"]}
-      
-[[redirects]]
-  from = "/*"
-  to = "https://go.advisorlaunch.com/version-test/index/1630939351705x199054128857547360"
-  status = 302
