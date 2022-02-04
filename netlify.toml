@@ -1,11 +1,11 @@
 [[redirects]]
-  from = "/home"
+  from = "/home/*"
   to = "https://go.advisorlaunch.com/version-test/home/:splat"
   status = 200
   force = true
   
 [[redirects]]
-  from = "/index"
+  from = "/index/*"
   to = "https://go.advisorlaunch.com/version-test/index/:splat"
   status = 200
   force = true
