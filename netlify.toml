@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = "https://go.advisorlaunch.com/version-test/:splat"
+  to = "https://go.advisorlaunch.com/version-test/index"
   status = 200
   force = true
 
