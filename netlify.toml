@@ -1,15 +1,9 @@
 [[redirects]]
-  from = "/index"
-  to = "https://go.advisorlaunch.com/version-test/index"
-  status = 200
-  force = true
-  
-[[redirects]]
-  from = "/index"
+  from = "/*"
   to = "https://go.advisorlaunch.com/version-test/:splat"
   status = 200
   force = true
-
+  
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
