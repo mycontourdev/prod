@@ -2,8 +2,10 @@
   from = "/api/*"
   to = "https://go.advisorlaunch.com/version-test/api/1.1/init/:splat"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true
