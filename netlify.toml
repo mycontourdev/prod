@@ -6,6 +6,6 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "https://go.advisorlaunch.com/version-test/"
   status = 200
   force = true
