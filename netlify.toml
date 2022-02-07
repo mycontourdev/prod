@@ -1,11 +1,1 @@
-[[redirects]]
-  from = "/api/*"
-  to = "https://go.advisorlaunch.com/version-test/api/1.1/init/:splat"
-  status = 200
-  force = true
 
-[[redirects]]
-  from = "/*"
-  to = "https://go.advisorlaunch.com/version-test/"
-  status = 200
-  force = true
