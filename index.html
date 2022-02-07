@@ -16,13 +16,13 @@
     var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
     if ((is_chrome) && (is_safari)) {is_safari = false;}  
     if (is_safari) {
-      alert ("dodol : "+document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/))
+      //alert ("dodol : "+document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/))
         // See if cookie exists (https://stackoverflow.com/a/25617724/1502448)
         if (!document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/)) {
             // Set cookie to maximum (https://stackoverflow.com/a/33106316/1502448)
           
             document.cookie = 'fixed=fixed; expires=Tue, 19 Jan 2048 03:14:07 UTC; path=/';
-          alert("dodol2 "+document.cookie)
+          //alert("dodol2 "+document.cookie)
           window.location.replace("https://www.contourlink.me/");
         }
     }
