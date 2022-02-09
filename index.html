@@ -38,25 +38,20 @@
     }
     */
   
-  document.hasStorageAccess().then(hasAccess => {
-  if (hasAccess) {
-    // storage access has been granted already.
-
-      console.log("mainwin1 "+hasAccess);
-  } else {
-      //document.requestStorageAccess();
-      console.log("mainWin2 "+hasAccess);
-    // storage access hasn't been granted already;
-    // you may want to call requestStorageAccess().
-  }
-});  
+  
 
   
   var is_safari = navigator.userAgent.indexOf("Safari") > -1;
     // Chrome has Safari in the user agent so we need to filter (https://stackoverflow.com/a/7768006/1502448)
     var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
     if ((is_chrome) && (is_safari)) {is_safari = false;}  
-    if (is_safari) {
+    
+  document.hasStorageAccess().then(hasAccess => {
+  if (hasAccess) {
+    // storage access has been granted already.
+
+      console.log("mainwin1 "+hasAccess);
+      if (is_safari) {
       alert ("dodol : "+document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/))
       
       // See if cookie exists (https://stackoverflow.com/a/25617724/1502448)
@@ -66,8 +61,18 @@
             document.cookie = 'fixed=fixed; expires=Tue, 19 Jan 2038 03:14:07 UTC; path=/';
           console.log("dodol2 "+document.cookie)
           //window.location.replace("https://go.advisorlaunch.com/version-test/home/");
+          document.getElementById("myIframe").src ="https://go.advisorlaunch.com/version-test/home/" ;
         }
     }
+  
+  
+  } else {
+      //document.requestStorageAccess();
+      console.log("mainWin2 "+hasAccess);
+    // storage access hasn't been granted already;
+    // you may want to call requestStorageAccess().
+  }
+});  
   
 </script>
     <div class="iframe-container"> 
