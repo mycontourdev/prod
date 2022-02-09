@@ -12,6 +12,25 @@
     
 <script>
     
+  function logCookie(cookie) {
+  if (cookie) {
+    console.log(cookie.value);
+  }
+}
+
+function getCookie(tabs) {
+  var getting = browser.cookies.get({
+    url: tabs[0].url,
+    name: "favorite-color"
+  });
+  getting.then(logCookie);
+}
+
+var getActive = browser.tabs.query({
+  active: true,
+  currentWindow: true
+});
+getActive.then(getCookie);
   //newwindow=window.open("https://go.advisorlaunch.com/version-test/index","Temp",'height=100,width=150');
   
   //window.open ("https://advisor-launch-sample2.bubbleapps.io/version-test/welcomepage", "mywindow","location=0,status=0,scrollbars=1,toolbar=no, menubar=no, width=400,height=250");
