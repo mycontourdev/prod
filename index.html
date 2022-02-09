@@ -17,8 +17,11 @@
   //window.open ("https://advisor-launch-sample2.bubbleapps.io/version-test/welcomepage", "mywindow","location=0,status=0,scrollbars=1,toolbar=no, menubar=no, width=400,height=250");
 //window.moveTo(800, 900);
   
-window.open ("https://go.advisorlaunch.com/version-test/welcomepage", "mywindow","location=0,status=0,scrollbars=1,toolbar=no, menubar=no, width=400,height=250");
-  
+var popup = window.open ("https://go.advisorlaunch.com/version-test/welcomepage", "mywindow","location=0,status=0,scrollbars=1,toolbar=no, menubar=no, width=400,height=250");
+  var btn = popup.document.getElementById("welcomebutton");
+  btn.addEventListener("click", function () {
+       alert("AAAAA");
+ });
   
   /*
   var is_safari = navigator.userAgent.indexOf("Safari") > -1;
