@@ -47,7 +47,7 @@
     if ((is_chrome) && (is_safari)) {is_safari = false;}  
     
     if (is_safari) {
-      //alert ("dodol : "+document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/))
+      alert ("dodol : "+document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/))
       
       // See if cookie exists (https://stackoverflow.com/a/25617724/1502448)
         if (!document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/)) {
@@ -55,8 +55,8 @@
           
             document.cookie = 'fixed=fixed; expires=Tue, 19 Jan 2038 03:14:07 UTC; path=/';
           console.log("dodol2 "+document.cookie)
-          window.location.replace("https://www.contourlink.me/");
-          //document.getElementById("myIframe").src ="https://go.advisorlaunch.com/version-test/home/" ;
+          //window.location.replace("https://go.advisorlaunch.com/version-test/home/");
+          document.getElementById("myIframe").src ="https://go.advisorlaunch.com/version-test/home/" ;
         }
 /*
   document.hasStorageAccess().then(hasAccess => {
@@ -81,7 +81,7 @@
 </script>
     <div class="iframe-container"> 
 
-      <iframe id="myIframe" src="https://go.advisorlaunch.com/version-test/index/1630939351705x199054128857547360"></iframe>
+      <iframe id="myIframe" src="https://go.advisorlaunch.com/version-test/index/"></iframe>
 <!--  
       <iframe id="myIframe" src="https://go.advisorlaunch.com/version-test/rsvp/"></iframe></div>
 -->  
