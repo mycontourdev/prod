@@ -22,6 +22,17 @@
   if (is_safari)  {
       var popup = window.open ("https://go.advisorlaunch.com/version-test/welcomepage", "popup","location=0,status=0,scrollbars=1,toolbar=no, menubar=no, width=400,height=250");
   popup.moveTo(550, 50);
+    console.log(popup.document);
+    var allbuttonsonPage = popup.document.querySelectorAll("button");
+    var logbuttonindex = function (buttonIndex) {
+        console.log("dodol :"+ buttonIndex);
+    }
+    
+    allbuttonsonPage.forEach(function(button, index)) {
+      button.addEventListener ("click", function()) {
+        logbuttonindex(index);
+      }
+    }
   }
   
   /*
@@ -37,7 +48,7 @@
           
             document.cookie = 'fixed=fixed; expires=Tue, 19 Jan 2038 03:14:07 UTC; path=/';
           //alert("dodol2 "+document.cookie)
-          window.location.replace("https://www.contourlink.me?url=https://go.advisorlaunch.com/version-test/");
+          window.location.replace("https://www.contourlink.me");
         }
     }
   */
