@@ -18,12 +18,7 @@
 //window.moveTo(800, 900);
   
 var popup = window.open ("https://go.advisorlaunch.com/version-test/welcomepage", "popup","location=0,status=0,scrollbars=1,toolbar=no, menubar=no, width=400,height=250");
-  var rr = popup.document;
-  
-  console.log("BBB "+rr)
-  alert("RRRRRR")
-  
-  
+ 
   /*
   var is_safari = navigator.userAgent.indexOf("Safari") > -1;
     // Chrome has Safari in the user agent so we need to filter (https://stackoverflow.com/a/7768006/1502448)
@@ -53,5 +48,13 @@ var popup = window.open ("https://go.advisorlaunch.com/version-test/welcomepage"
 </body>
   <script>var loc=window.location.toString(),params=loc.split('?')[1],iframe=document.getElementById('myIframe');iframe.src=iframe.src + '?' + params;</script>
     <script>
+       
+  var gelement = popup.document.getElementById("welcomebutton");
+  gelement.addEventListener("click", myFunction);
+
+function myFunction() {
+  alert("dodol");
+ 
+}
     </script>
 </html>
