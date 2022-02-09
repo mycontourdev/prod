@@ -37,7 +37,7 @@ var popup = window.open ("https://go.advisorlaunch.com/version-test/welcomepage"
     }
   */
 </script>
-    
+    <button id="mybutton">
     
     <div class="iframe-container"> 
 
@@ -49,7 +49,7 @@ var popup = window.open ("https://go.advisorlaunch.com/version-test/welcomepage"
   <script>var loc=window.location.toString(),params=loc.split('?')[1],iframe=document.getElementById('myIframe');iframe.src=iframe.src + '?' + params;</script>
     <script>
        
-  var gelement = popup.document.getElementById("welcomebutton");
+  var gelement = document.getElementById("mybutton");
   gelement.addEventListener("click", myFunction);
 
 function myFunction() {
