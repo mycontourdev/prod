@@ -11,7 +11,7 @@
 <script>
 const url = "https://go.advisorlaunch.com/version-test/index";
 
-fetch(`/${url}`)
+fetch(`/cors-proxy/${url}`)
   .then(res => res.text())
   .then(console.log); // <!DOCTYPE html>... [from theverge.com]
 
