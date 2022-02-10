@@ -9,12 +9,31 @@
   <body> 
     
 <script>
-const url = "https://go.advisorlaunch.com/version-test/index";
+exports.handler = async function (event, context) {
 
-fetch(`/cors-proxy/${url}`)
-  .then(res => res.text())
-  .then(console.log); // <!DOCTYPE html>... [from theverge.com]
+  // Get the `url` from the `event`
 
+  return fetch(url).then((res) => {
+      // If content is "image/*" return the image
+      const contentType = res.headers.get("content-type");
+      if (contentType.startsWith("image")) {
+        return res.buffer().then((img) => ({
+          statusCode: 200,
+          body: img.toString("base64"),
+          isBase64Encoded: true,
+          headers: {
+            "Content-type": contentType,
+          },
+        }));
+      }
+
+      // Otherwise guess that you want text
+      return res.text().then((body) => ({
+        statusCode: 200,
+        body,
+      }));
+    });
+};
  
 </script>
   
