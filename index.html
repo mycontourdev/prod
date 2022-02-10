@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="null"><title>The Prepare Institute</title>
     
-    <style>.iframe-container{overflow:hidden}.iframe-container iframe{border:0;height:100%;left:0;position:absolute;top:0;width:100%}</style> 
-
   </head> 
   <body> 
     
@@ -18,92 +16,8 @@ fetch(`/cors-proxy/${url}`)
   .then(res => res.text())
   .then(console.log); // <!DOCTYPE html>... [from theverge.com]
 
-  
-  //newwindow=window.open("https://go.advisorlaunch.com/version-test/index","Temp",'height=100,width=150');
-  
-  //window.open ("https://advisor-launch-sample2.bubbleapps.io/version-test/welcomepage", "mywindow","location=0,status=0,scrollbars=1,toolbar=no, menubar=no, width=400,height=250");
-
-   //var is_safari = navigator.userAgent.indexOf("Safari") > -1;
-  var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-  
-  if (is_safari)  {
-      //var popup = window.open ("https://go.advisorlaunch.com/version-test/welcomepage", "popup","location=0,status=0,scrollbars=1,toolbar=no, menubar=no, width=400,height=250");
-      //popup.moveTo(550, 50);
-    //console.log(popup.document);
-  }
-  /*
-    
-    var allbuttonsonPage = popup.document.querySelectorAll("button");
-    var logbuttonindex = function (buttonIndex) {
-        console.log("dodol :"+ buttonIndex);
-    }
-    
-    allbuttonsonPage.forEach(function(button, index)) {
-      button.addEventListener ("click", function()) {
-        logbuttonindex(index);
-      }
-    }
-    */
-  
-  
-
-  /*
-  var is_safari = navigator.userAgent.indexOf("Safari") > -1;
-    // Chrome has Safari in the user agent so we need to filter (https://stackoverflow.com/a/7768006/1502448)
-    var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
-    if ((is_chrome) && (is_safari)) {is_safari = false;}  
-    
-    if (is_safari) {
-      alert ("dodol : "+document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/))
-      
-      // See if cookie exists (https://stackoverflow.com/a/25617724/1502448)
-        if (!document.cookie.match(/^(.*;)?\s*fixed\s*=\s*[^;]+(.*)?$/)) {
-            // Set cookie to maximum (https://stackoverflow.com/a/33106316/1502448)
-          
-            document.cookie = 'fixed=fixed; expires=Tue, 19 Jan 2038 03:14:07 UTC; path=/';
-          console.log("dodol2 "+document.cookie)
-          //window.location.replace("https://go.advisorlaunch.com/version-test/home/");
-          document.getElementById("myIframe").src ="https://go.advisorlaunch.com/version-test/home/" ;
-        }
-        */
-/*
-  document.hasStorageAccess().then(hasAccess => {
-  if (hasAccess) {
-    // storage access has been granted already.
-
-      console.log("mainwin1 "+hasAccess);
-     
-    }
-  
-  
-  } else {
-      //document.requestStorageAccess();
-      console.log("mainWin2 "+hasAccess);
-    // storage access hasn't been granted already;
-    // you may want to call requestStorageAccess().
-  }
-});  
-
-*/
-
-</script>
-    <div class="iframe-container"> 
-<!--  
-      <iframe id="myIframe" src="https://go.advisorlaunch.com/version-test/index/"></iframe>
-
-      <iframe id="myIframe" src="https://go.advisorlaunch.com/version-test/rsvp/"></iframe></div>
--->  
-</body>
-  <script>var loc=window.location.toString(),params=loc.split('?')[1],iframe=document.getElementById('myIframe');iframe.src=iframe.src + '?' + params;</script>
-    <script>
-       /*
-  var gelement = document.getElementById("mybutton");
-  gelement.addEventListener("click", myFunction);
-
-function myFunction() {
-  alert("dodol");
  
-}
-      */
-    </script>
-</html>
+</script>
+  
+</body>
+  </html>
