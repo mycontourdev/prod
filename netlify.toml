@@ -1,1 +1,6 @@
 
+[[redirects]]
+  from = "/*"
+  to = "https://go.advisorlaunch.com/version-test/:splat"
+  status = 200
+  headers = {Access-Control-Allow-Origin = "*"}
