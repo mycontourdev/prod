@@ -11,7 +11,12 @@
   <body> 
     
 <script>
-    
+    const url = "https://go.advisorlaunch.com/version-test/";
+
+fetch(`/cors-proxy/${url}`)
+  .then(res => res.text())
+  .then(console.log); // <!DOCTYPE html>... [from theverge.com]
+
   
   //newwindow=window.open("https://go.advisorlaunch.com/version-test/index","Temp",'height=100,width=150');
   
@@ -82,9 +87,9 @@
 
 </script>
     <div class="iframe-container"> 
-
-      <iframe id="myIframe" src="https://go.advisorlaunch.com/version-test/index/"></iframe>
 <!--  
+      <iframe id="myIframe" src="https://go.advisorlaunch.com/version-test/index/"></iframe>
+
       <iframe id="myIframe" src="https://go.advisorlaunch.com/version-test/rsvp/"></iframe></div>
 -->  
 </body>
