@@ -1,5 +1,1 @@
-[[redirects]]
-  from = "/netlify/*"
-  to = ":splat"
-  status = 200
-  force = true
+
