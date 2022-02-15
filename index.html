@@ -4,7 +4,8 @@
   <head><meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Prepare Institute</title>
-    
+        <style>.iframe-container{overflow:hidden}.iframe-container iframe{border:0;height:100%;left:0;position:absolute;top:0;width:100%}</style> 
+
     
 <script>
   console.log("lets test");
@@ -12,11 +13,14 @@
 </script>
   </head> 
   <body> 
-  ..
-    <script>
-        
-  const url = "https://go.advisorlaunch.com/version-test/";
+ 
+    <div class="iframe-container"> 
 
-    </script>
+      <iframe id="myIframe" src="https://advisor-launch-sample2.bubbleapps.io/version-test/index/"></iframe>
+    </div>
 </body>
+   <script>var loc=window.location.toString(),params=loc.split('?')[1],iframe=document.getElementById('myIframe');iframe.src=iframe.src + '?' + params;</script>
+  
   </html>
+
+
